@@ -60,6 +60,11 @@ app.get('/', function (req, res) {
     res.send('Hello World')
 })
 
+/**
+ * @method REMOVE remove uma unica instância do ouvinte na fila.
+ */
+
+Emiiter.removeAllListeners('myEvent');
 
 
 app.listen(3000)
